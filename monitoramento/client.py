@@ -9,9 +9,9 @@ PORTA_NS = 8888
 # buscando a URI do objeto remoto no name server
 monit = Pyro5.api.Proxy(f"PYRONAME:monitor@{IP}:{PORTA_NS}")
 
-print(f"CPU: {monit.CPU()}")
+print(f"CPU: {monit.CPU()} %")
 print(f"MEM: {monit.Memoria()} %")
 
 # TODO: desenvolva mais duas opções de monitoramento da sua escolha
-print(f"???: {monit.???()} %")
-print(f"???: {monit.???()} %")
+print(f"DISK: {monit.Disk()[3]} %")
+print(f"NUMBER OF PIDS: {monit.Pids()}")
