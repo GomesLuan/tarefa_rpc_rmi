@@ -21,8 +21,8 @@ class Monitor(object):
     
 # utilizar este campo quando rodar na nuvem
 # IPNUVEM = "a.b.c.d"
-PORTA = 8080
-PORTA_NS = 8888
+PORTA = 80
+PORTA_NS = 443
 
 # criando um serviço Pyro
 #daemon = Pyro5.server.Daemon()
