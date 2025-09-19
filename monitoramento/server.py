@@ -20,14 +20,14 @@ class Monitor(object):
         return len(psutil.pids())
     
 # utilizar este campo quando rodar na nuvem
-# IPNUVEM = "a.b.c.d"
+IPNUVEM = "3.87.17.216"
 PORTA = 80
 PORTA_NS = 443
 
 # criando um serviço Pyro
 #daemon = Pyro5.server.Daemon()
-daemon = Pyro5.server.Daemon(host="0.0.0.0", port=PORTA)
-#daemon = Pyro5.server.Daemon(host="0.0.0.0", port=8080, nathost=IPNUVEM)
+#daemon = Pyro5.server.Daemon(host="0.0.0.0", port=PORTA)
+daemon = Pyro5.server.Daemon(host="0.0.0.0", port=PORTA, nathost=IPNUVEM)
 
 # NOTE: https://psutil.readthedocs.io/en/latest/
 
