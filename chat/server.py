@@ -12,7 +12,7 @@ def mensagens():
 
 # dados de conexão com o servidor
 IP = ""
-PORTA = 8000
+PORTA = 80
 
 # criando servidor RPC
 server = SimpleXMLRPCServer((IP, PORTA), allow_none=True)
