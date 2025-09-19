@@ -15,8 +15,8 @@ if len(sys.argv) < 2:
     exit(1)
 
 # dados da conexao com o servidor
-IP = "localhost"
-PORTA = 8000
+IP = "3.87.17.216"
+PORTA = 80
 
 # conectando ao servidor
 s = xmlrpc.client.ServerProxy(f"http://{IP}:{PORTA}/")
